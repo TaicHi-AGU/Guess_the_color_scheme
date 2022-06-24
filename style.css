@@ -2,34 +2,6 @@ body {
     color: #ff0000;
 }
 
-#my-id {
-    color: #ff00ff;
-}
-
-.my-class {
-    color: #ffff00;
-}
-
-.color-red-1 {
-    color: #ff0000;
-}
-
-/* .box11 {
-    background: #ffff00;
-}
-
-.box12 {
-    background: blue;
-}
-
-.box21 {
-    background: cadetblue;
-}
-
-.box22 {
-    background: #ff00ff;
-} */
-
 .line {
     display: flex;
 }
@@ -65,6 +37,7 @@ body {
     flex-direction: column;
 }
 
+/* 外枠 */
 .callButton {
     padding: 50px 0px 0px 145px;
     justify-content: center;
@@ -72,6 +45,7 @@ body {
     flex-direction: column;
 }
 
+/* プルダウンメニューの色 */
 #colorList option:nth-child(1) {
     background: white;
     color: black;
@@ -122,7 +96,9 @@ body {
     color: black;
 }
 
-#colorList option:nth-child(11) {
+#colorList option:nth-child(1) {
     background: white;
     color: black;
 }
+
+/* プルダウンメニューの色ここまで */
