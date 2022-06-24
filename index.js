@@ -1,40 +1,40 @@
 var color = ['red', 'orange', 'yellow', 'yellowgreen', 'green', 'skyblue', 'blue', 'purple', 'pink', 'white'];
 
-var input_ans = [4];
+var input_ans = [4]; //入力した解答を保存
 
-function enterColor11(idname) { //入力した色をセルに反映
+function enterColor1(idname) { //入力した色をセルに反映(左上)
     var obj = document.getElementById(idname);
-    const num = document.form11.color11.selectedIndex;
-    const colorIndex = document.form11.color11.options[num].value;
+    const num = document.form1.color1.selectedIndex;
+    const colorIndex = document.form1.color1.options[num].value;
     obj.style.backgroundColor = color[colorIndex];
     input_ans[0] = colorIndex
 }
 
-function enterColor12(idname) {
+function enterColor2(idname) { //入力した色をセルに反映(右上)
     var obj = document.getElementById(idname);
-    const num = document.form12.color12.selectedIndex;
-    const colorIndex = document.form12.color12.options[num].value;
+    const num = document.form2.color2.selectedIndex;
+    const colorIndex = document.form2.color2.options[num].value;
     obj.style.backgroundColor = color[colorIndex];
     input_ans[1] = colorIndex
 }
 
-function enterColor21(idname) {
+function enterColor3(idname) { //入力した色をセルに反映(左下)
     var obj = document.getElementById(idname);
-    const num = document.form21.color21.selectedIndex;
-    const colorIndex = document.form21.color21.options[num].value;
+    const num = document.form3.color3.selectedIndex;
+    const colorIndex = document.form3.color3.options[num].value;
     obj.style.backgroundColor = color[colorIndex];
     input_ans[2] = colorIndex
 }
 
-function enterColor22(idname) {
+function enterColor4(idname) { //入力した色をセルに反映(右下)
     var obj = document.getElementById(idname);
-    const num = document.form22.color22.selectedIndex;
-    const colorIndex = document.form22.color22.options[num].value;
+    const num = document.form4.color4.selectedIndex;
+    const colorIndex = document.form4.color4.options[num].value;
     obj.style.backgroundColor = color[colorIndex];
     input_ans[3] = colorIndex
 }
 
-var ans = []; //問題の答え
+var ans = []; //問題の解答を保存
 var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var a = arr.length;
 
@@ -46,34 +46,34 @@ while (a) { //配列をシャッフル
 }
 
 console.log("解答の色のインデックス")
-for (let i = 0; i < 4; i++) { //4つ選ぶ
+for (let i = 0; i < 4; i++) { //先頭4つを答えに採用
     ans[i] = arr[i];
     console.log(ans[i]);
 }
 
 window.onload = function () { //入力された際にenterColor()を実行
-    let select1 = document.querySelector('[name="color11"]');
-    let select2 = document.querySelector('[name="color12"]');
-    let select3 = document.querySelector('[name="color21"]');
-    let select4 = document.querySelector('[name="color22"]');
+    let select1 = document.querySelector('[name="color1"]');
+    let select2 = document.querySelector('[name="color2"]');
+    let select3 = document.querySelector('[name="color3"]');
+    let select4 = document.querySelector('[name="color4"]');
 
     select1.onchange = event => {
-        enterColor11('box11-Id');
+        enterColor1('box1-Id');
     }
     select2.onchange = event => {
-        enterColor12('box12-Id');
+        enterColor2('box2-Id');
     }
     select3.onchange = event => {
-        enterColor21('box21-Id');
+        enterColor3('box3-Id');
     }
     select4.onchange = event => {
-        enterColor22('box22-Id');
+        enterColor4('box4-Id');
     }
 };
 
-function print_input() {
+function print_input() { //選択インデックス確認用(コンソール)
     console.log("選んだ色のインデックス")
-    for (let i = 0; i < 4; i++) { //4つ選ぶ
+    for (let i = 0; i < 4; i++) {
         console.log(input_ans[i]);
     }
 }
