@@ -1,0 +1,128 @@
+body {
+    color: #ff0000;
+}
+
+#my-id {
+    color: #ff00ff;
+}
+
+.my-class {
+    color: #ffff00;
+}
+
+.color-red-1 {
+    color: #ff0000;
+}
+
+/* .box11 {
+    background: #ffff00;
+}
+
+.box12 {
+    background: blue;
+}
+
+.box21 {
+    background: cadetblue;
+}
+
+.box22 {
+    background: #ff00ff;
+} */
+
+.line {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid;
+    border-color: gainsboro;
+    border-radius: 10px;
+}
+
+.outsideBox {
+    background: linear-gradient(to bottom right, black, gray);
+    width: 340px;
+    height: 340px;
+    border-radius: 30px;
+    padding: 10px 0px 0px 10px
+}
+
+.space {
+    padding: 10px 0px 0px 10px
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.callButton {
+    padding: 50px 0px 0px 145px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#colorList option:nth-child(1) {
+    background: white;
+    color: black;
+}
+
+#colorList option:nth-child(2) {
+    background: red;
+    color: white;
+}
+
+#colorList option:nth-child(3) {
+    background: orange;
+    color: black;
+}
+
+#colorList option:nth-child(4) {
+    background: yellow;
+    color: black;
+}
+
+#colorList option:nth-child(5) {
+    background: yellowgreen;
+    color: black;
+}
+
+#colorList option:nth-child(6) {
+    background: green;
+    color: white;
+}
+
+#colorList option:nth-child(7) {
+    background: skyblue;
+    color: black;
+}
+
+#colorList option:nth-child(8) {
+    background: blue;
+    color: white;
+}
+
+#colorList option:nth-child(9) {
+    background: purple;
+    color: white;
+}
+
+#colorList option:nth-child(10) {
+    background: pink;
+    color: black;
+}
+
+#colorList option:nth-child(11) {
+    background: white;
+    color: black;
+}
