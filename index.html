@@ -4,11 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Hello World</title>
+    <title>Guess_the_color_scheme</title>
     <script src="index.js"></script>
 </head>
 
-<body text="my-class">
+<body text="entireView" class="entireView">
     <h1>Game</h1>
     <p align="center"></p>
     <p></p>
@@ -112,8 +112,47 @@
             </div>
         </div>
     </div>
+
     <div id="callButton-Id" class="callButton call">
-        <input type="button" value="コール" onclick="print_input();" />
+        <input type="button" value="コール" onclick="call_button();" />
+    </div>
+
+    <div class="outsideResultBox">
+        <div class="line">
+            <div class="label">
+                Hit
+            </div>
+            <div class="space">
+                <div id="hit1-Id" class="resultBox hit1">H1</div>
+            </div>
+            <div class="space">
+                <div id="hit2-Id" class="resultBox hit2">H2</div>
+            </div>
+            <div class="space">
+                <div id="hit3-Id" class="resultBox hit3">H3</div>
+            </div>
+            <div class="space">
+                <div id="hit4-Id" class="resultBox hit4">H4</div>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">
+                Blow
+            </div>
+            <div class="space">
+                <div id="blow1-Id" class="resultBox blow1">B1</div>
+            </div>
+            <div class="space">
+                <div id="blow2-Id" class="resultBox blow2">B2</div>
+            </div>
+            <div class="space">
+                <div id="blow3-Id" class="resultBox blow3">B3</div>
+            </div>
+            <div class="space">
+                <div id="blow4-Id" class="resultBox blow4">B4</div>
+            </div>
+        </div>
     </div>
 </body>
 
