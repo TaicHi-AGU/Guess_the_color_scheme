@@ -36,12 +36,12 @@ function enterColor4(idname) { //入力した色をセルに反映(右下)
 
 var ans = []; //問題の解答を保存
 var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var a = arr.length;
+var arrlen = arr.length;
 
-while (a) { //配列をシャッフル
-    var j = Math.floor(Math.random() * a);
-    var t = arr[--a];
-    arr[a] = arr[j];
+while (arrlen) { //配列をシャッフル
+    var j = Math.floor(Math.random() * arrlen);
+    var t = arr[--arrlen];
+    arr[arrlen] = arr[j];
     arr[j] = t;
 }
 
@@ -71,8 +71,8 @@ window.onload = function () { //入力された際にenterColor()を実行
     }
 };
 
-function print_input() { //選択インデックス確認用(コンソール)
-    console.log("選んだ色のインデックス")
+function call_button() { //コールボタンの動作
+    console.log("選んだ色のインデックス") //選択インデックス確認用(コンソール)
     for (let i = 0; i < 4; i++) {
         console.log(input_ans[i]);
     }
@@ -95,7 +95,7 @@ function judge_result(input_ans, ans) {
             }
         }
     }
-    
+
     console.log("hit");
     console.log(hit);
     console.log("blow");

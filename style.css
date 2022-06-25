@@ -1,9 +1,11 @@
 body {
-    color: #ff0000;
+    color: white;
+    background: rgb(100, 100, 100);
 }
 
 .line {
     display: flex;
+    align-items: center;
 }
 
 .box {
@@ -14,16 +16,30 @@ body {
     height: 100px;
     padding: 20px;
     border: 5px solid;
-    border-color: gainsboro;
+    border-color:rgb(150, 150, 150);
     border-radius: 10px;
 }
 
 .outsideBox {
-    background: linear-gradient(to bottom right, black, gray);
-    width: 340px;
-    height: 340px;
-    border-radius: 30px;
-    padding: 10px 0px 0px 10px
+    background: rgb(230, 230, 230);
+    width: 330px;
+    height: 330px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+    border: 5px solid;
+    border-color:rgb(240, 240, 240);
+}
+
+.entireView {
+    margin: 20px;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 0px 0px 0px 0px;
 }
 
 .space {
@@ -39,10 +55,35 @@ body {
 
 /* 外枠 */
 .callButton {
-    padding: 50px 0px 0px 145px;
+    padding: 0px 0px 0px 120px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
+}
+
+.outsideResultBox {
+    color: black;
+    background: rgb(230, 230, 230);
+    width: 330px;
+    height: 150px;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 5px solid;
+    border-color:rgb(240, 240, 240);
+    padding: 0px 0px 0px 0px;
+}
+
+.resultBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 5px solid;
+    border-color:rgb(150, 150, 150);
+    border-radius: 100px;
 }
 
 /* プルダウンメニューの色 */
@@ -100,5 +141,4 @@ body {
     background: white;
     color: black;
 }
-
 /* プルダウンメニューの色ここまで */
