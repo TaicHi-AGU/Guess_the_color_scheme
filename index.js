@@ -76,4 +76,28 @@ function print_input() { //選択インデックス確認用(コンソール)
     for (let i = 0; i < 4; i++) {
         console.log(input_ans[i]);
     }
+    judge_result(input_ans, ans);
+}
+
+function judge_result(input_ans, ans) {
+    var hit = 0;
+    var blow = 0;
+
+    for (let i = 0; i < 4; i++) { //hit, blowを求める処理
+        for (let j = 0; j < 4; j++) {
+            if (ans[i] == input_ans[j]) {
+                if (i == j) {
+                    hit++;
+                }
+                else {
+                    blow++
+                }
+            }
+        }
+    }
+    
+    console.log("hit");
+    console.log(hit);
+    console.log("blow");
+    console.log(blow);
 }
