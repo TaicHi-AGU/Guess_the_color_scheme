@@ -1,6 +1,7 @@
 body {
     color: white;
     background: rgb(100, 100, 100);
+    font-family: "Comic Sans MS";
 }
 
 .line {
@@ -90,55 +91,66 @@ body {
 #colorList option:nth-child(1) {
     background: white;
     color: black;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(2) {
-    background: red;
-    color: white;
+    background: #ff7f7f;
+    color: #ffebe6;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(3) {
-    background: orange;
-    color: black;
+    background: #ffbf7f;
+    color: #ff4500;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(4) {
-    background: yellow;
-    color: black;
+    background: #ffff7f;
+    color: #ff7f7f;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(5) {
-    background: yellowgreen;
-    color: black;
+    background: #bfff7f;
+    color: #008000;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(6) {
-    background: green;
-    color: white;
+    background: #7fffbf;
+    color: #004627;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(7) {
-    background: skyblue;
-    color: black;
+    background: #7fffff;
+    color: #007fa0;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(8) {
-    background: blue;
-    color: white;
+    background: #7fbfff;
+    color: #3e367a;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(9) {
-    background: purple;
-    color: white;
+    background: #bf7fff;
+    color: #483d8b;
+    font-size: 130%;
 }
 
 #colorList option:nth-child(10) {
-    background: pink;
-    color: black;
+    background: #ff7fff;
+    color: #96328a;
+    font-size: 130%;
 }
 
-#colorList option:nth-child(1) {
-    background: white;
+#colorList option:nth-child(11) {
+    background: #f5f5f5;
     color: black;
+    font-size: 130%;
 }
 /* プルダウンメニューの色ここまで */
