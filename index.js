@@ -1,4 +1,4 @@
-var color = ['red', 'orange', 'yellow', 'yellowgreen', 'green', 'skyblue', 'blue', 'purple', 'pink', 'white'];
+var color = ['#ff7f7f', '#ffbf7f', '#ffff7f', '#bfff7f', '#7fffbf', '#7fffff', '#7fbfff', '#bf7fff', '#ff7fff', '#f5f5f5'];
 
 var input_ans = [4]; //入力した解答を保存
 
